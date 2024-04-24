@@ -12,9 +12,6 @@ car_manager = CarManager()
 player = Player()
 scoreboard = Scoreboard()
 
-# for i in range(10):
-#     car_manager.initialize_car()
-
 screen.listen()
 screen.onkey(player.go_up, "Up")
 
@@ -39,17 +36,4 @@ while game_is_on:
         car_manager.level_up()
         scoreboard.increase_level()
 
-
-
-
-
-
-
-
-
-
-
-
-
 screen.exitonclick()
-

@@ -6,8 +6,6 @@ STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 5
 
 
-# cars = []
-
 class CarManager():
     def __init__(self):
         self.cars = []
@@ -28,11 +26,10 @@ class CarManager():
     def spawn_car(self):
         pass
 
-    #move all cars in the list of car objects
+    # move all cars in the list of car objects
     def move_car(self):
         for car in self.cars:
             car.forward(self.car_speed)
-
 
     def level_up(self):
         self.car_speed += MOVE_INCREMENT
